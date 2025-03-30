@@ -1,0 +1,37 @@
+@import "../../../../public/scss/variables.scss";
+
+.card-box {
+  box-shadow: rgba($base-color, 0.24) 0px 3px 8px;
+  height: 70px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.doller {
+  color: $base-color;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid rgba($base-color, 0.24);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: rgba($base-color, 0.24);
+}
+
+.card {
+  box-shadow: rgba($base-color, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  h2{
+    color:rgba($base-color, 1)
+  }
+}

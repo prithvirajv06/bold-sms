@@ -1,0 +1,12 @@
+@import "../../../../public/scss/variables.scss";
+
+
+.b-crumb {
+  display: flex;
+  justify-content: start;
+}
+
+a {
+  font-size: 14px;
+  color: $base-color;
+}
