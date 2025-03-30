@@ -1,62 +1,13 @@
-<nav class="nav">
-  <div class="m-logo">
-    <img class="logo__icon" src="https://www.youshe.id/favicon.ico">
-    <!--img class="logo__text" src="https://blogger.googleusercontent.com/img/a/AVvXsEike5pXQzGJhqq26mKDZ1H7Ph-jcZFV2pOymZgcuDTBVmnP1r4e7eePxWPr2rX7grUzidLGYgeU6Z5KkoRqmVx1CfopQx7AZua6uksdyGKf5iyGA7gHNGxtbgHEnQ_9hWTI058K8DYQ-thc2PsiIpnApWcygBXNg28h6sI_bqheG9hHmuIVFoEX67yo"-->
-    <strong>YOU<span>SHE</span></strong>
-  </div>
-  <div class="nav__item overview">
-    <i class="fa fa-home" aria-hidden="true"></i>
-    <span>Overview</span>
-  </div>
-  <div class="nav__item">
-    <i class="fa fa-line-chart" aria-hidden="true"></i>
-    <span>Analytics</span>
-  </div>
-  <label class="nav__label">Develop</label>
-  <div class="nav__item">
-    <i class="fa fa-users" aria-hidden="true"></i>
-    <span>Authentication</span>
-  </div>
-  <div class="nav__item">
-    <i class="fa fa-database" aria-hidden="true"></i>
-    <span>Database</span>
-  </div>
-  <div class="nav__item">
-    <i class="fa fa-folder" aria-hidden="true"></i>
-    <span>Storage</span>
-  </div>
-  <div class="nav__item">
-    <i class="fa fa-globe" aria-hidden="true"></i>
-    <span>Hosting</span>
-  </div>
-  <div class="nav__item">
-    <i class="fa fa-mobile" aria-hidden="true"></i>
-    <span>Test Lab</span>
-  </div>
-  <div class="nav__item">
-    <i class="fa fa-bug" aria-hidden="true"></i>
-    <span>Crash Reporting</span>
-  </div>
-  <label class="nav__label">Grow</label>
-  <div class="nav__item">
-    <i class="fa fa-commenting" aria-hidden="true"></i>
-    <span>Notifications</span>
-  </div>
-  <div class="nav__item">
-    <i class="fa fa-map-signs" aria-hidden="true"></i>
-    <span>Remote Config</span>
-  </div>
-  <div class="nav__item">
-    <i class="fa fa-link" aria-hidden="true"></i>
-    <span>Dynamic Links</span>
-  </div>
-  <label class="nav__label">Earn</label>
-  <div class="nav__item">
-    <i class="fa fa-link" aria-hidden="true"></i>
-    <span>Ad Mob</span>
-  </div>
+<nav>
+  <br>
+  <span style="padding: 5px;">
+    <img src="Simpli_Admission-logo.png" width="100px">
+  </span>
+  <br>
+  @for (menu of menuItem; track $index) {
+  <a  [routerLink]="[menu.routerLink]" routerLinkActive="active" >
+    <i class="fa" [ngClass]="menu.icon"></i>
+    <span>{{menu.lable}}</span>
+  </a>
+  }
 </nav>
-
-<div class="nav-footer">
-  <i class="fa fa-angle-left" aria-hidden="true"></i>
-</div>

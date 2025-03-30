@@ -1,0 +1,38 @@
+@import "../../../../public/scss/variables.scss";
+
+
+a {
+  cursor: pointer;
+}
+
+
+input {
+  width: 20%;
+  height: 30px;
+  border-radius: 10px;
+  border: 0.5px solid gray;
+  padding: 5px;
+  font-size: 17px;
+  color: rgb(88, 88, 88);
+
+}
+
+:focus {
+  border: 0.5px solid $base-color;
+  outline: none !important;
+  box-shadow: 0 0 10px rgba($color: $base-color, $alpha: 0.6);
+}
+
+.header {
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  justify-content: end;
+  display: flex;
+}
+.fa-circle-user{
+  font-size: 25px;
+}
+.user{
+  padding: 7px;
+  color:$base-color;
+}
