@@ -1,3 +1,5 @@
+@import '../public/scss/variables.scss';
+
 * {
   font-family: "Funnel Sans", sans-serif;
   font-optical-sizing: auto;
@@ -7,4 +9,12 @@
 
 a {
   cursor: pointer;
+}
+
+.btn-primary {
+  background-color: $base-color !important;
+}
+
+.btn-edit {
+  background-color: rgba($base-color, 0.25) !important;
 }

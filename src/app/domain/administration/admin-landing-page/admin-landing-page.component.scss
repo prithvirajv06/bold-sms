@@ -1,0 +1,29 @@
+@import "../../../../../public/scss/variables.scss";
+
+.card-menu {
+  box-shadow: rgba($base-color, 0.24) 0px 3px 8px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  justify-content: start;
+  display: flex;
+  gap: 15px;
+  color: rgba($base-color, 0.8);
+
+  i {
+    font-size: 20px;
+    color: rgba($base-color, 1);
+  }
+
+  cursor: pointer;
+}
+
+.card-menu:hover {
+  i {
+    color: #fff;
+  }
+
+  background-color: rgba($base-color, 1);
+  color: #fff;
+}

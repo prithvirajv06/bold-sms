@@ -1,0 +1,11 @@
+<br>
+<div class="row">
+  @for (admin of adminActions; track $index) {
+  <div class="col-md-2">
+    <div class="card-menu" [routerLink]="admin.routerLink">
+      <i class="fa-solid" [ngClass]="admin.icon"></i>
+      <b>{{admin.lable}}</b>
+    </div>
+  </div>
+  }
+</div>

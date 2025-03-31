@@ -1,0 +1,197 @@
+<div>
+  <header>
+    <div class="search-bar">
+      <input type="search" placeholder="Search roles...">
+      <button class="btn btn-primary">Add New Role</button>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <div class="tab active">Roles</div>
+    <div class="tab">User Assignment</div>
+    <div class="tab">Permission Settings</div>
+  </div>
+
+  <div class="filters">
+    <select>
+      <option>All Departments</option>
+      <option>Administration</option>
+      <option>Teaching Staff</option>
+      <option>Support Staff</option>
+      <option>IT Department</option>
+    </select>
+    <select>
+      <option>All Status</option>
+      <option>Active</option>
+      <option>Inactive</option>
+    </select>
+  </div>
+
+  <div class="role-cards">
+    <div class="role-card">
+      <h3 class="role-title">School Administrator</h3>
+      <p class="role-description">Full system access with ability to manage all aspects of the school system.</p>
+      <h4 class="permissions-title">Key Permissions:</h4>
+      <ul class="permission-list">
+        <li>User Management</li>
+        <li>Role Configuration</li>
+        <li>System Settings</li>
+        <li>Financial Access</li>
+        <li>Student Records</li>
+      </ul>
+      <div class="role-actions">
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Delete</button>
+      </div>
+    </div>
+
+    <div class="role-card">
+      <h3 class="role-title">Teacher</h3>
+      <p class="role-description">Access to classroom management, grading system, and student communication.</p>
+      <h4 class="permissions-title">Key Permissions:</h4>
+      <ul class="permission-list">
+        <li>Attendance Tracking</li>
+        <li>Grade Entry</li>
+        <li>Parent Communication</li>
+        <li>Assignment Creation</li>
+        <li>Course Materials</li>
+      </ul>
+      <div class="role-actions">
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Delete</button>
+      </div>
+    </div>
+
+    <div class="role-card">
+      <h3 class="role-title">Department Head</h3>
+      <p class="role-description">Extended teacher access with departmental oversight capabilities.</p>
+      <h4 class="permissions-title">Key Permissions:</h4>
+      <ul class="permission-list">
+        <li>Teacher Management</li>
+        <li>Curriculum Development</li>
+        <li>Department Reporting</li>
+        <li>Budget Access (View)</li>
+        <li>Schedule Management</li>
+      </ul>
+      <div class="role-actions">
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Delete</button>
+      </div>
+    </div>
+
+    <div class="role-card">
+      <h3 class="role-title">Student</h3>
+      <p class="role-description">Limited access to personal records, assignments, and communication tools.</p>
+      <h4 class="permissions-title">Key Permissions:</h4>
+      <ul class="permission-list">
+        <li>View Assignments</li>
+        <li>Submit Work</li>
+        <li>View Grades</li>
+        <li>Communication Tools</li>
+        <li>Calendar Access</li>
+      </ul>
+      <div class="role-actions">
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <h2>Role Assignments</h2>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Role Name</th>
+          <th>Department</th>
+          <th>Users Assigned</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>School Administrator</td>
+          <td>Administration</td>
+          <td>3</td>
+          <td><span class="status-active">Active</span></td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Teacher</td>
+          <td>Teaching Staff</td>
+          <td>42</td>
+          <td><span class="status-active">Active</span></td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Department Head</td>
+          <td>Teaching Staff</td>
+          <td>7</td>
+          <td><span class="status-active">Active</span></td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Student</td>
+          <td>Students</td>
+          <td>1,253</td>
+          <td><span class="status-active">Active</span></td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Counselor</td>
+          <td>Support Staff</td>
+          <td>5</td>
+          <td><span class="status-active">Active</span></td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Librarian</td>
+          <td>Support Staff</td>
+          <td>2</td>
+          <td><span class="status-active">Active</span></td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>IT Support</td>
+          <td>IT Department</td>
+          <td>4</td>
+          <td><span class="status-active">Active</span></td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Guest Teacher</td>
+          <td>Teaching Staff</td>
+          <td>0</td>
+          <td><span class="status-inactive">Inactive</span></td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pagination">
+    <div class="page-item">«</div>
+    <div class="page-item active">1</div>
+    <div class="page-item">2</div>
+    <div class="page-item">3</div>
+    <div class="page-item">»</div>
+  </div>
+</div>
