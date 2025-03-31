@@ -35,6 +35,7 @@ export const MENU_CONFIGS: {
       {
         lable: 'Onboarding',
         icon: 'fa-clipboard-user',
+        routerLink: '/staff-onboarding',
       },
       {
         lable: 'Staff Management',

@@ -1,0 +1,217 @@
+<div>
+  <header>
+    <b>User Role Assignment</b>
+    <a href="#" class="back-btn">Back to Role Management</a>
+  </header>
+
+  <div class="action-row">
+    <div class="filters">
+      <div class="search-box">
+        <input type="search" placeholder="Search users...">
+      </div>
+      <select>
+        <option>All Departments</option>
+        <option>Administration</option>
+        <option>Teaching Staff</option>
+        <option>Support Staff</option>
+        <option>IT Department</option>
+      </select>
+    </div>
+    <button class="btn btn-success">Save Assignments</button>
+  </div>
+
+  <div class="assignment-container">
+    <div class="user-list">
+      <div class="list-header">Users</div>
+      <div class="list-content">
+        <div class="user-item">
+          <div class="user-name">John Smith</div>
+          <div class="user-email">john.smith-school.edu</div>
+        </div>
+        <div class="user-item selected">
+          <div class="user-name">Sarah Johnson</div>
+          <div class="user-email">sarah.johnson-school.edu</div>
+        </div>
+        <div class="user-item">
+          <div class="user-name">Michael Brown</div>
+          <div class="user-email">michael.brown-school.edu</div>
+        </div>
+        <div class="user-item">
+          <div class="user-name">Emily Davis</div>
+          <div class="user-email">emily.davis-school.edu</div>
+        </div>
+        <div class="user-item">
+          <div class="user-name">David Wilson</div>
+          <div class="user-email">david.wilson-school.edu</div>
+        </div>
+        <div class="user-item">
+          <div class="user-name">Jennifer Taylor</div>
+          <div class="user-email">jennifer.taylor-school.edu</div>
+        </div>
+        <div class="user-item">
+          <div class="user-name">Robert Anderson</div>
+          <div class="user-email">robert.anderson-school.edu</div>
+        </div>
+        <div class="user-item">
+          <div class="user-name">Lisa Martinez</div>
+          <div class="user-email">lisa.martinez-school.edu</div>
+        </div>
+        <div class="user-item">
+          <div class="user-name">James Thomas</div>
+          <div class="user-email">james.thomas-school.edu</div>
+        </div>
+        <div class="user-item">
+          <div class="user-name">Patricia Harris</div>
+          <div class="user-email">patricia.harris-school.edu</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="actions-column">
+      <div class="arrow-btn">→</div>
+      <div class="arrow-btn">←</div>
+    </div>
+
+    <div class="role-list">
+      <div class="list-header">Roles</div>
+      <div class="list-content">
+        <div class="role-item">
+          <div class="role-name">School Administrator</div>
+          <div class="role-department">Administration</div>
+        </div>
+        <div class="role-item selected">
+          <div class="role-name">Teacher</div>
+          <div class="role-department">Teaching Staff</div>
+        </div>
+        <div class="role-item">
+          <div class="role-name">Department Head</div>
+          <div class="role-department">Teaching Staff</div>
+        </div>
+        <div class="role-item">
+          <div class="role-name">Counselor</div>
+          <div class="role-department">Support Staff</div>
+        </div>
+        <div class="role-item">
+          <div class="role-name">Librarian</div>
+          <div class="role-department">Support Staff</div>
+        </div>
+        <div class="role-item">
+          <div class="role-name">IT Support</div>
+          <div class="role-department">IT Department</div>
+        </div>
+        <div class="role-item">
+          <div class="role-name">Finance Officer</div>
+          <div class="role-department">Administration</div>
+        </div>
+        <div class="role-item">
+          <div class="role-name">Student</div>
+          <div class="role-department">Students</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Current Assignments</h2>
+
+  <div class="current-assignments">
+    <table>
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Email</th>
+          <th>Department</th>
+          <th>Assigned Roles</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Smith</td>
+          <td>john.smith-school.edu</td>
+          <td>Administration</td>
+          <td>
+            <span class="badge badge-primary">School Administrator</span>
+          </td>
+          <td>
+            <button class="btn btn-secondary">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Sarah Johnson</td>
+          <td>sarah.johnson-school.edu</td>
+          <td>Teaching Staff</td>
+          <td>
+            <span class="badge badge-primary">Teacher</span>
+            <span class="badge badge-success">Department Head</span>
+          </td>
+          <td>
+            <button class="btn btn-secondary">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Michael Brown</td>
+          <td>michael.brown-school.edu</td>
+          <td>Teaching Staff</td>
+          <td>
+            <span class="badge badge-primary">Teacher</span>
+          </td>
+          <td>
+            <button class="btn btn-secondary">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Emily Davis</td>
+          <td>emily.davis-school.edu</td>
+          <td>Support Staff</td>
+          <td>
+            <span class="badge badge-warning">Counselor</span>
+          </td>
+          <td>
+            <button class="btn btn-secondary">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>David Wilson</td>
+          <td>david.wilson-school.edu</td>
+          <td>IT Department</td>
+          <td>
+            <span class="badge badge-primary">IT Support</span>
+          </td>
+          <td>
+            <button class="btn btn-secondary">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Jennifer Taylor</td>
+          <td>jennifer.taylor-school.edu</td>
+          <td>Teaching Staff</td>
+          <td>
+            <span class="badge badge-primary">Teacher</span>
+          </td>
+          <td>
+            <button class="btn btn-secondary">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Robert Anderson</td>
+          <td>robert.anderson-school.edu</td>
+          <td>Teaching Staff</td>
+          <td>
+            <span class="badge badge-primary">Teacher</span>
+          </td>
+          <td>
+            <button class="btn btn-secondary">Edit</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pagination">
+    <div class="page-item">«</div>
+    <div class="page-item active">1</div>
+    <div class="page-item">2</div>
+    <div class="page-item">3</div>
+    <div class="page-item">»</div>
+  </div>
+</div>

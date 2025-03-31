@@ -1,0 +1,173 @@
+<div class="container">
+  <header>
+    <h1>Create New Role</h1>
+    <a href="#" class="back-btn">Back to Role Management</a>
+  </header>
+
+  <div class="form-container">
+    <div class="form-group">
+      <label for="role-name">Role Name*</label>
+      <input type="text" id="role-name" placeholder="Enter role name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="department">Department*</label>
+      <select id="department" required>
+        <option value="">Select department</option>
+        <option value="administration">Administration</option>
+        <option value="teaching">Teaching Staff</option>
+        <option value="support">Support Staff</option>
+        <option value="it">IT Department</option>
+        <option value="finance">Finance Department</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Role Description</label>
+      <textarea id="description" placeholder="Describe the role and its responsibilities"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Role Status</label>
+      <div class="permission-item">
+        <input type="checkbox" id="status-active" checked>
+        <label for="status-active">Active</label>
+      </div>
+    </div>
+
+    <h2>Role Permissions</h2>
+
+    <div class="permission-section">
+      <div class="permission-group">
+        <div class="permission-header">User Management</div>
+        <div class="permission-items">
+          <div class="permission-item">
+            <input type="checkbox" id="user-view">
+            <label for="user-view">View Users</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="user-create">
+            <label for="user-create">Create Users</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="user-edit">
+            <label for="user-edit">Edit Users</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="user-delete">
+            <label for="user-delete">Delete Users</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="permission-group">
+        <div class="permission-header">Student Records</div>
+        <div class="permission-items">
+          <div class="permission-item">
+            <input type="checkbox" id="student-view">
+            <label for="student-view">View Student Profiles</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="student-create">
+            <label for="student-create">Create Student Profiles</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="student-edit">
+            <label for="student-edit">Edit Student Profiles</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="student-delete">
+            <label for="student-delete">Delete Student Profiles</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="student-grades">
+            <label for="student-grades">Manage Grades</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="student-attendance">
+            <label for="student-attendance">Manage Attendance</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="permission-group">
+        <div class="permission-header">Course Management</div>
+        <div class="permission-items">
+          <div class="permission-item">
+            <input type="checkbox" id="course-view">
+            <label for="course-view">View Courses</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="course-create">
+            <label for="course-create">Create Courses</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="course-edit">
+            <label for="course-edit">Edit Courses</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="course-delete">
+            <label for="course-delete">Delete Courses</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="course-assign">
+            <label for="course-assign">Assign Teachers to Courses</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="course-materials">
+            <label for="course-materials">Manage Course Materials</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="permission-group">
+        <div class="permission-header">System Administration</div>
+        <div class="permission-items">
+          <div class="permission-item">
+            <input type="checkbox" id="system-settings">
+            <label for="system-settings">Manage System Settings</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="system-roles">
+            <label for="system-roles">Manage Roles & Permissions</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="system-backup">
+            <label for="system-backup">System Backup & Restore</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="system-logs">
+            <label for="system-logs">View System Logs</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="permission-group">
+        <div class="permission-header">Finance & Billing</div>
+        <div class="permission-items">
+          <div class="permission-item">
+            <input type="checkbox" id="finance-view">
+            <label for="finance-view">View Financial Records</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="finance-create">
+            <label for="finance-create">Create Financial Records</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="finance-edit">
+            <label for="finance-edit">Edit Financial Records</label>
+          </div>
+          <div class="permission-item">
+            <input type="checkbox" id="finance-reports">
+            <label for="finance-reports">Generate Financial Reports</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-secondary">Cancel</button>
+      <button class="btn btn-primary">Create Role</button>
+    </div>
+  </div>
+</div>

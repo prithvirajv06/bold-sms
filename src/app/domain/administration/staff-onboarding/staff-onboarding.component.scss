@@ -1,0 +1,153 @@
+.header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.card-header {
+  font-weight: 600;
+  padding: 15px 20px;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.required-field::after {
+  content: "*";
+  color: red;
+  margin-left: 4px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #2d4373;
+  border-color: #2d4373;
+}
+
+.progress-tracker {
+  margin-bottom: 30px;
+}
+
+.progress-step {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.progress-step.active {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.active .step-number {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.completed .step-number {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.step-connector {
+  position: absolute;
+  top: 25px;
+  height: 2px;
+  background-color: #ddd;
+  width: 100%;
+  left: 50%;
+  z-index: -1;
+}
+
+.document-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.document-status {
+  font-size: 0.85rem;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.qualification-entry {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.remove-entry {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#application-tabs .nav-link {
+  color: #495057;
+}
+
+#application-tabs .nav-link.active {
+  color: var(--primary-color);
+  font-weight: 600;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.form-floating-label {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.tooltip-icon {
+  color: #6c757d;
+  cursor: pointer;
+  margin-left: 5px;
+}
